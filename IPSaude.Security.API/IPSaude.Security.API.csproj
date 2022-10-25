@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="5.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IPSaude.Security.Application.Password.Contracts\IPSaude.Security.Application.Password.Contracts.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Application.Password\IPSaude.Security.Application.Password.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Domain.Password.Contracts\IPSaude.Security.Domain.Password.Contracts.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Domain.Password\IPSaude.Security.Domain.Password.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Infra.Core\IPSaude.Security.Infra.Core.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Infra.CrossCutting.IoC\IPSaude.Security.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\IPSaude.Security.Infra.Data\IPSaude.Security.Infra.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>
